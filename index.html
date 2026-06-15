@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rollsportfeld – Belegungsplan</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f0f2f5;
+      color: #1a1a2e;
+      padding: 1.5rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+    header p {
+      color: #666;
+      font-size: 0.85rem;
+      margin-top: 0.3rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.25rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+      border-top: 4px solid transparent;
+    }
+    .card.free  { border-top-color: #22c55e; }
+    .card.busy  { border-top-color: #f97316; }
+    .card h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .badge.free { background: #dcfce7; color: #15803d; }
+    .badge.busy { background: #ffedd5; color: #c2410c; }
+    .bookings {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+    }
+    .bookings th, .bookings td {
+      text-align: left;
+      padding: 0.35rem 0.5rem;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .bookings thead th {
+      color: #888;
+      font-weight: 500;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+    @media (max-width: 480px) {
+      body { padding: 1rem; }
+      header h1 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rollsportfeld &ndash; Belegungsplan</h1>
+    <p>Automatisch aktualisiert: 15.06.2026 14:17 UTC</p>
+  </header>
+  <div class="grid">
+    <div class="card free"><h2>Montag, 15.06.2026</h2><p class="badge free">&#10003; Frei</p></div>
+<div class="card busy"><h2>Dienstag, 16.06.2026</h2><p class="badge busy">Belegt</p><table class="bookings"><thead><tr><th>Zeit</th><th>Team</th><th>Typ</th></tr></thead><tbody><tr><td>19:00 - 21:00</td><td>Bike Polo</td><td>Trainingsplan</td></tr></tbody></table></div>
+<div class="card busy"><h2>Mittwoch, 17.06.2026</h2><p class="badge busy">Belegt</p><table class="bookings"><thead><tr><th>Zeit</th><th>Team</th><th>Typ</th></tr></thead><tbody><tr><td>19:00 - 21:00</td><td>Red Bats</td><td>Trainingsplan</td></tr></tbody></table></div>
+<div class="card busy"><h2>Donnerstag, 18.06.2026</h2><p class="badge busy">Belegt</p><table class="bookings"><thead><tr><th>Zeit</th><th>Team</th><th>Typ</th></tr></thead><tbody><tr><td>19:00 - 21:00</td><td>HC Nando</td><td>Trainingsplan</td></tr></tbody></table></div>
+<div class="card busy"><h2>Freitag, 19.06.2026</h2><p class="badge busy">Belegt</p><table class="bookings"><thead><tr><th>Zeit</th><th>Team</th><th>Typ</th></tr></thead><tbody><tr><td>19:00 - 21:00</td><td>Bike Polo</td><td>Trainingsplan</td></tr></tbody></table></div>
+<div class="card free"><h2>Samstag, 20.06.2026</h2><p class="badge free">&#10003; Frei</p></div>
+<div class="card busy"><h2>Sonntag, 21.06.2026</h2><p class="badge busy">Belegt</p><table class="bookings"><thead><tr><th>Zeit</th><th>Team</th><th>Typ</th></tr></thead><tbody><tr><td>10:00 - 13:00</td><td>Pickle Ball</td><td>Trainingsplan</td></tr></tbody></table></div>
+<div class="card free"><h2>Montag, 22.06.2026</h2><p class="badge free">&#10003; Frei</p></div>
+<div class="card busy"><h2>Dienstag, 23.06.2026</h2><p class="badge busy">Belegt</p><table class="bookings"><thead><tr><th>Zeit</th><th>Team</th><th>Typ</th></tr></thead><tbody><tr><td>19:00 - 21:00</td><td>Bike Polo</td><td>Trainingsplan</td></tr></tbody></table></div>
+<div class="card busy"><h2>Mittwoch, 24.06.2026</h2><p class="badge busy">Belegt</p><table class="bookings"><thead><tr><th>Zeit</th><th>Team</th><th>Typ</th></tr></thead><tbody><tr><td>09:00 - 17:00</td><td>Kantonsschule Wiedikon</td><td>Schulsportplan</td></tr><tr><td>19:00 - 21:00</td><td>Red Bats</td><td>Trainingsplan</td></tr></tbody></table></div>
+<div class="card busy"><h2>Donnerstag, 25.06.2026</h2><p class="badge busy">Belegt</p><table class="bookings"><thead><tr><th>Zeit</th><th>Team</th><th>Typ</th></tr></thead><tbody><tr><td>19:00 - 21:00</td><td>HC Nando</td><td>Trainingsplan</td></tr></tbody></table></div>
+  </div>
+</body>
+</html>
